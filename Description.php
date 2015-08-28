@@ -42,6 +42,7 @@ function DescriptionArticleViewHeader(&$article, &$outputDone = null, &$pcache =
 	return TRUE;
 }
 function DescriptionFromArticle(&$article) {
+	$desc = null;
 	if (defined('MWRDF_VERSION')) {
 		$desc = DescriptionFromRDF($article);
 	}
